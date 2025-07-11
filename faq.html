@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - FoodExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>FoodExpress</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="location-selector">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <select id="location-select">
+                            <option value="">Select Location</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="pune">Pune</option>
+                            <option value="hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+                    
+                    <div class="cart-icon" onclick="window.location.href='cart.html'">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                    
+                    <div class="auth-buttons">
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Sign Up</a>
+                    </div>
+                </div>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-hero">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about FoodExpress</p>
+            </div>
+        </section>
+
+        <section class="faq-content">
+            <div class="container">
+                <div class="faq-categories">
+                    <button class="category-btn active" data-category="all">All Questions</button>
+                    <button class="category-btn" data-category="ordering">Ordering</button>
+                    <button class="category-btn" data-category="delivery">Delivery</button>
+                    <button class="category-btn" data-category="payment">Payment</button>
+                    <button class="category-btn" data-category="account">Account</button>
+                </div>
+
+                <div class="faq-list" id="faq-list">
+                    <div class="faq-item" data-category="ordering">
+                        <div class="faq-question">
+                            <h3>How do I place an order?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To place an order, simply browse our menu, select your desired items, add them to cart, and proceed to checkout. You can also use our search feature to find specific dishes or restaurants.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="ordering">
+                        <div class="faq-question">
+                            <h3>Can I modify my order after placing it?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can modify your order within 2 minutes of placing it. After that, the restaurant begins preparation and modifications may not be possible. Contact customer support for assistance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="delivery">
+                        <div class="faq-question">
+                            <h3>How long does delivery take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most orders are delivered within 30-45 minutes. Delivery time may vary based on your location, restaurant preparation time, and weather conditions. You can track your order in real-time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="delivery">
+                        <div class="faq-question">
+                            <h3>What are the delivery charges?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Delivery charges are ₹49 for most orders. We offer free delivery on orders above ₹500. Special promotions may apply for reduced or free delivery charges.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="delivery">
+                        <div class="faq-question">
+                            <h3>Can I track my order?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! You can track your order in real-time through our website or app. You'll receive updates when your order is confirmed, being prepared, picked up, and delivered.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h3>What payment methods do you accept?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept all major credit and debit cards, UPI payments, net banking, digital wallets, and cash on delivery. All online transactions are secure and encrypted.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h3>Is my payment information secure?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely. We use industry-standard encryption and security measures to protect your payment information. We never store your complete card details on our servers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h3>What if my payment fails?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If your payment fails, you can try again with the same or different payment method. If the issue persists, contact your bank or our customer support team for assistance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>How do I create an account?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click on the "Sign Up" button and provide your name, email, and phone number. You can also sign up using your Google or Facebook account for faster registration.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>Can I change my delivery address?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can add multiple delivery addresses in your account settings. You can select or change your delivery address during checkout.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="ordering">
+                        <div class="faq-question">
+                            <h3>Do you have minimum order requirements?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Minimum order requirements vary by restaurant and location. You'll see the minimum order amount on the restaurant page before placing your order.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="delivery">
+                        <div class="faq-question">
+                            <h3>What if my order is delayed or missing?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If your order is significantly delayed or missing items, please contact our customer support immediately. We'll work with the restaurant to resolve the issue and may offer compensation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="ordering">
+                        <div class="faq-question">
+                            <h3>Can I cancel my order?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can cancel your order within 2 minutes of placing it for a full refund. After preparation begins, cancellation may not be possible, but please contact support for assistance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>How do I contact customer support?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can contact our customer support through live chat, email at info@foodexpress.com, or phone at +91 1234567890. Our support team is available 24/7 to assist you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-support">
+                    <div class="support-card">
+                        <h3>Still have questions?</h3>
+                        <p>Our customer support team is here to help you 24/7</p>
+                        <div class="support-buttons">
+                            <a href="contact.html" class="btn-primary">Contact Us</a>
+                            <a href="tel:+911234567890" class="btn-secondary">
+                                <i class="fas fa-phone"></i>
+                                Call Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>FoodExpress</span>
+                    </div>
+                    <p>Delivering happiness to your doorstep with the best food from your favorite restaurants.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                        <p><i class="fas fa-envelope"></i> info@foodexpress.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FoodExpress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
